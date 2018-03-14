@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)http://kodhus.com/kodnest/frame/session-xAGdQFg -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            
+            <title>Runner</title>
+            <style class="kodnest-auto-reload"></style>
+          </head>
+          <body>
+            <script>
+                function injectCss(evt) {
+                    var newCss = evt.data;
+                    var newStyle = document.createElement("style");
+                    newStyle.className = "kodnest-auto-reload";
+                    if (newStyle.stylesheet) {
+                        newStyle.stylesheet.cssText = newCss;
+                    } else {
+                        newStyle.appendChild(document.createTextNode(newCss));
+                    }
+                    document.head.appendChild(newStyle);
+                    newStyle.parentNode.removeChild(document.querySelector(".kodnest-auto-reload"));
+                }
+                if (window.addEventListener) {
+
+                    window.addEventListener("message", injectCss, false);
+                }
+                else {
+                    window.attachEvent("onmessage", injectCss);
+                }
+            </script>
+          
+        </body></html>

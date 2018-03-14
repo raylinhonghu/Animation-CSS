@@ -1,0 +1,45 @@
+
+
+body{
+  background:#eee;
+}
+
+.btn{
+  width: 160px;
+  height: 50px;
+  position:absolute;
+  background: tomato;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  cursor:pointer;
+  overflow: hidden;
+  color:#fff;
+}
+
+.btn:before {
+  content: 'Hover Me';
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  transition: all 0.3s;
+}
+.btn:hover:before{
+  top:-30px;
+}
+
+.btn:after{
+  font-family: 'Ionicons';
+  content:'\f2c5';
+  position:absolute;
+  top:calc(100% + 30px);
+  left:50%;
+  transform: translate(-50%,-50%);
+  font-size:30px;
+  transition: all 0.3s;
+}
+
+.btn:hover:after{
+  top: 50%
+}

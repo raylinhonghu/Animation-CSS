@@ -1,0 +1,19 @@
+.box{
+  width:100px;
+  height:100px;
+  background: tomato;
+  cursor: pointer;
+}
+
+.box.animate{
+  animation: move 2s forwards;
+}
+
+@keyframes move {
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(400px);
+  }
+}
