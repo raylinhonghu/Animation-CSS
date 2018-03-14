@@ -1,0 +1,58 @@
+header{
+  padding: 10px 20px;
+  border-bottom: 1px solid #eee;
+  background: #fff;
+}
+header:after{
+  display: block;
+  content: "";
+  clear: both;
+}
+.basket ul{
+  padding: 0;
+  margin-top: 40px;
+}
+.basket li{
+  display: inline-block;
+  list-style-type: none;
+  width: 30%;
+  margin: 30px 1.5%;
+  text-align: center;
+}
+.basket button{
+  border-radius: 10px;
+  cursor: pointer;
+}
+.basket header div{
+  float: right;
+  position: relative;
+  z-index: 1;
+}
+.basket header h1{
+  float: left;
+}
+
+.zoom{
+  position: absolute;
+  top: 20px;
+  right:400px;
+  width:100px;
+  animation: zoom 1s ease forwards;
+}
+
+.wiggle{
+  animation: wiggle 1s 0.8s ease forwards;
+}
+
+@keyframes zoom{
+  0%{opacity: 0;top:20px}
+  50%{opacity: 1;top:-40px}
+  100%{opacity: 0; right:40px;top:20px}
+}
+
+@keyframes wiggle {
+  0%{transform: rotateZ(0deg);}
+  33%{transform: rotateZ(30deg);}
+  66%{transform: rotateZ(-30deg);}
+  100%{transform: rotateZ(0deg);}
+}
