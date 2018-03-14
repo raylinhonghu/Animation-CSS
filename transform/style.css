@@ -14,7 +14,6 @@ body{
 img{
   transform: translateX(200px);
   transform: translateY(200px);
-  /* transform does not add up */
   transform: translate(0, 0);
 }
 
@@ -24,7 +23,8 @@ img{
   transform: scale(1,1);
 }
 
+/* minus degree is anti-clockwise  */
+/* transform does not add up */
 img{
-  transform: rotateY(45deg);
-  transform: rotateZ(90deg)
+  transform: rotateZ(-90deg) translateY(200px)
 }
