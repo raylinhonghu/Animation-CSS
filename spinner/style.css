@@ -1,0 +1,41 @@
+.container {
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+/* http://www.colorzilla.com/gradient-editor/ */
+.spinner{
+  width: 40px;
+  height: 40px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c42778+0,7db9e8+100&1+0,0+73 */
+background: -moz-linear-gradient(top, rgba(196,39,120,1) 0%, rgba(144,146,202,0) 73%, rgba(125,185,232,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(196,39,120,1) 0%,rgba(144,146,202,0) 73%,rgba(125,185,232,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(196,39,120,1) 0%,rgba(144,146,202,0) 73%,rgba(125,185,232,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c42778', endColorstr='#007db9e8',GradientType=0 ); /* IE6-9 */
+/*   border: 5px solid #000;
+  border-top-color:transparent;
+  border-radius:50%;
+  animation: spinner 0.5s linear infinite; */
+  border-radius:50%;
+  animation: spinner 0.5s linear infinite;
+}
+
+
+.spinner:after{
+  content: '';
+  width:30px;
+  height:30px;
+  background:#fff;
+  position:absolute;
+  border-radius:50%;
+  top:10%;
+  left:12%;
+}
+
+@keyframes spinner{
+  from{}
+  to{
+    transform: rotate(360deg)
+  }
+}

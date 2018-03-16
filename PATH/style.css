@@ -1,0 +1,14 @@
+/* .container{
+  posiition:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%)
+}
+ */
+
+svg path{
+  stroke: #000;
+  stroke-width: 5;
+  /* stroke-linecap: round; */
+  fill: transparent;
+}
