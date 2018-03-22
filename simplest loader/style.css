@@ -1,0 +1,22 @@
+.container{
+  position: absolute;
+  top:50%;
+  left:50%;
+  translate(-50%,-50%);
+}
+
+.spinner{
+  border: 5px solid black;
+  border-top-color:transparent;
+  border-radius:50%;
+  width:40px;
+  height:40px;
+  animation: spinner .7s linear forwards infinite;
+}
+
+@keyframes spinner{
+  from{}
+  to{
+    transform: rotate(350deg);
+  }
+}

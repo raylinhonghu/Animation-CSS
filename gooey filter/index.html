@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./master.css">
+    <title></title>
+  </head>
+  <body>
+  <header>
+    <div class="menu-trigger">
+      <span></span>
+    </div>
+  </header>
+
+    <svg>
+    <!--   color,blur svg filters -->
+      <defs>
+        <filter id="goo">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur"/>
+          <feColorMatrix in="blur"
+            type="matrix"
+            values="1 0 0 0 0
+                    0 1 0 0 0
+                    0 0 1 0 0
+                    0 0 0 18 -7" result="color"/>
+        <feBlend in="SourceGraphic" in2="color" mode="multiply"/>
+        </filter>
+      </defs>
+    </svg>
+  </body>
+</html>

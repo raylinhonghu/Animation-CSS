@@ -1,0 +1,46 @@
+body{
+  background-color: lightblue;
+  margin:0;
+  height: 2000px;
+  filter: url('#goo');
+}
+
+header{
+  height: 60px;
+  background-color: #fff;
+}
+
+.menu-trigger{
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 50%;
+  position: fixed;
+  top:10px;
+  right:30px;
+}
+
+.menu-trigger span,
+.menu-trigger span:before,
+.menu-trigger span:after{
+  width:20px;
+  height:2px;
+  background: black;
+  position: absolute;
+}
+
+.menu-trigger span{
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+.menu-trigger span:before{
+  top: -6px;
+  content: '';
+}
+
+.menu-trigger span:after{
+  bottom: -6px;
+  content: '';
+}
